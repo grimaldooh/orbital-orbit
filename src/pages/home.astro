@@ -1,0 +1,15 @@
+---
+import AuthProvider from '../components/AuthProvider.jsx';
+import MiComponenteProtegido from '../components/MiComponenteProtegido.jsx';
+---
+<html>
+  <head>
+    <title>Proyecto con Keycloak</title>
+  </head>
+  <body>
+    <!-- Hidrata el componente AuthProvider en el cliente -->
+    <AuthProvider client:load>
+      <MiComponenteProtegido />
+    </AuthProvider>
+  </body>
+</html>
